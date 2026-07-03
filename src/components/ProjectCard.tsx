@@ -27,7 +27,7 @@ export function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true, amount: 0.2 }}
       className="group w-full"
     >
-      <div className="flex flex-col md:flex-row gap-6 overflow-hidden border-y-2 border-x-0 theme-border-secondary bg-white/5 dark:bg-white/[0.02] px-3 py-6 transition-all duration-300 backdrop-blur-sm rounded-2xl md:gap-3">
+      <div className="flex flex-col md:flex-row gap-6 overflow-hidden border-y-2 border-x-0 theme-border-secondary bg-white/5 dark:bg-white/[0.02] px-3 py-6 transition-all duration-300 backdrop-blur-sm rounded-2xl md:gap-3 glass-card-hover group">
         
         {/* Thumbnail Area - Aspect Video (16/9) */}
         <div className="relative aspect-video w-full overflow-hidden rounded-md sm:w-64 sm:shrink-0 bg-neutral-100/50 dark:bg-neutral-800/30 shadow-inner">
