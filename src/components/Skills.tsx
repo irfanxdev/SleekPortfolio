@@ -81,12 +81,15 @@ export function Skills() {
 
 function SkillItem({ skill }: { skill: Skill }) {
   return (
-    <div className="flex flex-col items-center gap-3 group px-4">
+    <div 
+      className="flex flex-col items-center gap-3 group px-4 cursor-pointer focus:outline-none"
+      tabIndex={0}
+    >
       {/* 
           Logo-first focus.
           Removed capsule background for a clean, non-boxed look in both modes.
       */}
-      <div className="transition-all duration-500 group-hover:scale-125 group-hover:-translate-y-1 filter grayscale-[0.5] group-hover:grayscale-0 drop-shadow-sm group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.1)]">
+      <div className="transition-all duration-500 group-hover:scale-125 group-focus:scale-125 group-hover:-translate-y-1 group-focus:-translate-y-1 filter grayscale-[0.5] group-hover:grayscale-0 group-focus:grayscale-0 drop-shadow-sm group-hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.1)] group-focus:drop-shadow-[0_0_12px_rgba(255,255,255,0.1)]">
         {skill.icon}
       </div>
 
@@ -94,7 +97,7 @@ function SkillItem({ skill }: { skill: Skill }) {
           Subtle theme-aware text labels.
           Ensures visibility and professional feel in both Dark and Bright modes.
       */}
-      <span className="text-[10px] font-black tracking-widest uppercase theme-text-secondary opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+      <span className="text-[10px] font-black tracking-widest uppercase theme-text-secondary opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 group-focus:translate-y-0">
         {skill.name}
       </span>
     </div>

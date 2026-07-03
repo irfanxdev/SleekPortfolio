@@ -32,7 +32,7 @@ export function Header() {
 
           <div className="flex flex-col gap-4">
             {/* Profile Avatar */}
-            <div className="relative shrink-0 w-20 h-20 sm:w-28 sm:h-28 -mt-5 sm:-mt-7 group">
+            <div className="relative shrink-0 w-20 h-20 sm:w-28 sm:h-28 -mt-5 sm:-mt-7 group cursor-pointer focus:outline-none" tabIndex={0}>
               <div className="relative border-2 theme-profile-ring rounded-full overflow-hidden w-full h-full theme-profile-bg shadow-lg">
                 <Image
                   src="/profile.webp"
