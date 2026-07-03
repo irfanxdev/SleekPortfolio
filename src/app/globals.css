@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
 
 /* ---- View Transition (circle reveal) ---- */
 ::view-transition-old(root),
@@ -81,6 +82,7 @@
   --floating-card-bg: rgba(255, 255, 255, 0.02);
   --floating-card-border: rgba(255, 255, 255, 0.06);
   --noise-opacity: 0.03;
+  --btn-hover-bg: rgba(255, 255, 255, 0.18);
 }
 
 html.light {
@@ -148,6 +150,7 @@ html.light {
   --floating-card-bg: rgba(255, 255, 255, 0.5);
   --floating-card-border: rgba(255, 255, 255, 0.65);
   --noise-opacity: 0.015;
+  --btn-hover-bg: rgba(0, 0, 0, 0.04);
 }
 
 /* ---- Custom animations ---- */
@@ -478,6 +481,13 @@ body {
   background: var(--scrollbar-thumb-hover);
 }
 
+
+.theme-btn-hover:hover {
+  background-color: var(--btn-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* ---- Theme-aware utility classes ---- */
 .theme-heading {
   color: var(--text-heading);
@@ -653,7 +663,7 @@ body {
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: currentcolor;
   animation: shimmer 8s linear infinite;
 }
 
@@ -695,11 +705,11 @@ body {
 }
 
 /* ---- Markdown Content Styles ---- */
-.markdown-content h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.5rem; color: white; }
-.markdown-content h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.5rem; color: white; }
-.markdown-content h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; color: white; }
-.markdown-content p { color: #94a3b8; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem; }
-.markdown-content ul, .markdown-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: #94a3b8; list-style-type: disc !important; }
+.markdown-content h1 { font-size: 2.25rem; font-weight: 800; margin-bottom: 2rem; border-bottom: 1px solid var(--border-primary); padding-bottom: 0.5rem; color: var(--text-heading); }
+.markdown-content h2 { font-size: 1.75rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.5rem; color: var(--text-heading); }
+.markdown-content h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; color: var(--text-heading); }
+.markdown-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem; }
+.markdown-content ul, .markdown-content ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-secondary); list-style-type: disc !important; }
 .markdown-content ol { list-style-type: decimal !important; }
 .markdown-content li { margin-bottom: 0.5rem; }
 .markdown-content code { background: rgba(255,255,255,0.1); padding: 0.2rem 0.4rem; border-radius: 0.4rem; font-family: monospace; font-size: 0.9em; color: #e2e8f0; }
@@ -711,6 +721,6 @@ body {
 .markdown-content a:hover { color: #a5b4fc; }
 .markdown-content table { width: 100%; border-collapse: separate; border-spacing: 0; margin-bottom: 1.5rem; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); }
 .markdown-content th, .markdown-content td { border: 1px solid rgba(255,255,255,0.05); padding: 1rem 1.25rem; text-align: left; }
-.markdown-content th { background: rgba(255,255,255,0.03); font-weight: 700; color: white; }
+.markdown-content th { background: var(--accent-bg); font-weight: 700; color: var(--text-heading); }
 .markdown-content tr:nth-child(even) { background: rgba(255,255,255,0.01); }
 .markdown-content hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 3rem 0; }

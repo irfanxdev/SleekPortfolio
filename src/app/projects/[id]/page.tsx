@@ -54,7 +54,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       <div className="mb-8">
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 theme-text-muted hover:text-white transition-colors group"
+          className="inline-flex items-center gap-2 theme-text-muted hover:text-indigo-400 transition-colors group"
         >
           <ArrowLeft size={18} className="group-hover:-translate-x-1 transition-transform" />
           Back to All Projects
@@ -103,7 +103,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-6 py-3 rounded-2xl glass-card border-white/10 hover:bg-white/5 font-bold transition-all theme-text-muted hover:text-white"
+                className="flex items-center gap-2 px-6 py-3 rounded-2xl theme-bg-secondary border theme-border-secondary hover:bg-white dark:hover:bg-white/5 font-bold transition-all theme-text-muted hover:text-indigo-400"
               >
                 <Github size={18} />
                 Source Code

@@ -21,7 +21,17 @@ export function Projects() {
       <div className="mt-10 flex justify-center">
         <Link
           href="/projects"
-          className="px-8 py-2.5 rounded-xl bg-white/70 dark:bg-white/[0.03] backdrop-blur-md border border-black/5 dark:border-white/10 text-black text-[14px] font-medium shadow-sm hover:shadow-md hover:bg-white/90 dark:hover:bg-white/[0.06] transition-all duration-300"
+          className="
+      px-8 py-2.5 rounded-xl 
+      theme-bg-secondary
+      theme-text hover:text-indigo-400
+      backdrop-blur-md 
+      border theme-border-secondary
+      text-[14px] font-bold
+      shadow-sm 
+      theme-btn-hover
+      transition-all duration-500
+    "
         >
           Show all Projects
         </Link>

@@ -50,14 +50,14 @@ export function WakaTimeStatus() {
   return (
     <>
       {/* Visual Dot on Avatar */}
-      <div className={`absolute bottom-0 right-0 sm:bottom-1 sm:right-1 w-5 h-5 sm:w-6 sm:h-6 ${statusColor} rounded-full border-4 border-[#0B0D0E] z-20 cursor-default`} title={isOnline ? "Online & Working" : "Offline"}>
+      <div className={`absolute bottom-0 right-0 sm:bottom-1 sm:right-1 w-5 h-5 sm:w-6 sm:h-6 ${statusColor} rounded-full border-4 theme-profile-bg z-20 cursor-default`} title={isOnline ? "Online & Working" : "Offline"}>
         {/* Ping animation (only if online) */}
         {isOnline && <div className="absolute inset-0 rounded-full group-hover:bg-green-500 bg-slate-500 animate-ping opacity-40 transition-colors duration-300"></div>}
       </div>
 
       {/* Floating Status Card (visible on hover/tap) */}
       <div className="absolute left-full top-1/2 -translate-y-1/2 ml-3 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-30 translate-x-2 group-hover:translate-x-0 w-max">
-        <div className="bg-[#111118]/95 backdrop-blur-md border border-white/10 rounded-lg p-2.5 px-3.5 shadow-2xl flex items-center gap-3 relative overflow-hidden">
+        <div className="theme-bg-secondary/95 backdrop-blur-md border theme-border-secondary rounded-lg p-2.5 px-3.5 shadow-2xl flex items-center gap-3 relative overflow-hidden">
           {/* Subtle glow behind card */}
           <div className={`absolute top-0 right-0 w-24 h-24 ${glowColor} blur-2xl rounded-full opacity-50`}></div>
 
@@ -66,7 +66,7 @@ export function WakaTimeStatus() {
           </div>
 
           <div className="text-left flex flex-col justify-center relative z-10 whitespace-nowrap">
-            <p className="text-xs font-bold text-white leading-tight flex items-center gap-1.5">
+            <p className="text-xs font-bold theme-text leading-tight flex items-center gap-1.5">
               {isOnline ? 'Online in VS Code' : 'Offline in VS Code'}
             </p>
 
