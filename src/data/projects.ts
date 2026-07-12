@@ -4,7 +4,7 @@ export const allProjects: Project[] = [
   {
     id: "Dispatch",
     title: "Dispatch",
-    description: "Dispatch is a web application that help you to post on multiple social media platform like instagram , facebook, x , linked In , pintrest. it it like Write it once it lands everywhere.",
+    description: "Dispatch is a web application that help you to post on multiple social media platform like instagram , facebook, x , linked In , pintrest. it is like Write it once and it land  everywhere.",
     thumbnail: "/Dispatch.webp",
     tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "Strapi"],
     status: "In Progress",
