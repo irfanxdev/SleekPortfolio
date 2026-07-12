@@ -2,14 +2,14 @@ import { Project } from "@/components/ProjectCard";
 
 export const allProjects: Project[] = [
   {
-    id: "meal-stack",
-    title: "Meal Stack",
-    description: "A Full stack project that tells you the recipe of your meal according to the ingredients that you have in your bucket or fridge. It helps you reduce food waste by suggesting recipes based on available items.",
-    thumbnail: "/mealStack.webp",
-    tags: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "Strapi"],
+    id: "Dispatch",
+    title: "Dispatch",
+    description: "Dispatch is a web application that help you to post on multiple social media platform like instagram , facebook, x , linked In , pintrest. it it like Write it once it lands everywhere.",
+    thumbnail: "/Dispatch.webp",
+    tags: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "Strapi"],
     status: "In Progress",
-    liveLink: "#",
-    githubLink: "https://github.com/irfan-ansari303/MealStack.git",
+    liveLink: "https://disptach-frontend.onrender.com",
+    githubLink: "https://github.com/irfanxdev/Disptach.git",
   },
   {
     id: "talent-iq",
