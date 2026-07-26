@@ -5,7 +5,7 @@ export const allProjects: Project[] = [
     id: "Dispatch",
     title: "Dispatch",
     description: "Share once and it will post on multiple social media platforms. ",
-    thumbnail: "/dispatch.webp",
+    thumbnail: "/Dispatch.webp",
     tags: ["Tailwind CSS", "Node.js", "Express.js","MongoDB","Meta"],
     status: "In Progress",
     liveLink: "https://disptach-frontend.onrender.com",
