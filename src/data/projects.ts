@@ -8,7 +8,7 @@ export const allProjects: Project[] = [
     thumbnail: "/dispatch.webp",
     tags: ["Tailwind CSS", "Node.js", "Express.js","MongoDB","Meta"],
     status: "In Progress",
-    liveLink: "#",
+    liveLink: "https://disptach-frontend.onrender.com",
     githubLink: "https://github.com/irfanxdev/Disptach.git",
   },
   {
