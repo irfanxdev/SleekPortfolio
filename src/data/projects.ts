@@ -46,7 +46,7 @@ export const allProjects: Project[] = [
       "MongoDB"
     ],
     status: "Completed",
-    liveLink: "https://talent-iq-1-io9l.onrender.com",
+    liveLink: "https://talentiq-qyqn.onrender.com",
     githubLink: "https://github.com/irfan-ansari303/TALENT-IQ.git",
   },
   {
