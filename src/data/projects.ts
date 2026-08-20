@@ -11,6 +11,16 @@ export const allProjects: Project[] = [
     liveLink: "https://disptach-frontend.onrender.com",
     githubLink: "https://github.com/irfanxdev/Disptach.git",
   },
+   {
+    id: "SketchParty",
+    title: "SketchParty",
+    description: "Built a real-time multiplayer drawing and guessing game with live gameplay and chat.",
+    thumbnail: "/SketchParty.webp",
+    tags: ["React.js","Tailwind CSS","Socket.io"],
+    status: "Completed",
+    liveLink: "https://sketchparty-jlux.onrender.com/",
+    githubLink: "https://github.com/irfanxdev/Sketchparty.git",
+  },
   {
     id: "talent-iq",
     title: "Talent IQ",
