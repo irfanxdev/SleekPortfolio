@@ -21,6 +21,18 @@ export const allProjects: Project[] = [
     liveLink: "https://sketchparty-jlux.onrender.com/",
     githubLink: "https://github.com/irfanxdev/Sketchparty.git",
   },
+  
+  {
+    id: "url-shortener",
+    title: "URL Shortener",
+    description:
+      "A backend-focused application for shortening URLs with secure authentication and authorization using JWT and bcrypt. Includes a well-structured MongoDB schema and multiple RESTful API endpoints built with a modular Node.js architecture.",
+    thumbnail: "/Url-shortner.png",
+    tags: ["Node.js", "MongoDB", "JWT", "REST API", "Express.js"],
+    status: "Completed",
+    liveLink: "https://url-shortner-037m.onrender.com",
+    githubLink: "https://github.com/irfan-ansari303/URL_SHORTNER.git",
+  },
   {
     id: "talent-iq",
     title: "Talent IQ",
@@ -36,17 +48,6 @@ export const allProjects: Project[] = [
     status: "Completed",
     liveLink: "https://talent-iq-1-io9l.onrender.com",
     githubLink: "https://github.com/irfan-ansari303/TALENT-IQ.git",
-  },
-  {
-    id: "url-shortener",
-    title: "URL Shortener",
-    description:
-      "A backend-focused application for shortening URLs with secure authentication and authorization using JWT and bcrypt. Includes a well-structured MongoDB schema and multiple RESTful API endpoints built with a modular Node.js architecture.",
-    thumbnail: "/Url-shortner.png",
-    tags: ["Node.js", "MongoDB", "JWT", "REST API", "Express.js"],
-    status: "Completed",
-    liveLink: "https://url-shortner-037m.onrender.com",
-    githubLink: "https://github.com/irfan-ansari303/URL_SHORTNER.git",
   },
   {
     id: "airis-chat",
