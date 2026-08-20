@@ -1,16 +1,16 @@
 import { Project } from "@/components/ProjectCard";
 
 export const allProjects: Project[] = [
-  {
-    id: "Dispatch",
-    title: "Dispatch",
-    description: "Share once and it will post on multiple social media platforms. ",
-    thumbnail: "/Dispatch.webp",
-    tags: ["Tailwind CSS", "Node.js", "Express.js","MongoDB","Meta"],
-    status: "In Progress",
-    liveLink: "https://disptach-frontend.onrender.com",
-    githubLink: "https://github.com/irfanxdev/Disptach.git",
-  },
+  // {
+  //   id: "Dispatch",
+  //   title: "Dispatch",
+  //   description: "Share once and it will post on multiple social media platforms. ",
+  //   thumbnail: "/Dispatch.webp",
+  //   tags: ["Tailwind CSS", "Node.js", "Express.js","MongoDB","Meta"],
+  //   status: "In Progress",
+  //   liveLink: "https://disptach-frontend.onrender.com",
+  //   githubLink: "https://github.com/irfanxdev/Disptach.git",
+  // },
    {
     id: "SketchParty",
     title: "SketchParty",
